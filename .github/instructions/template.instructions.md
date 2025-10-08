@@ -3,7 +3,7 @@ applyTo: <blob-path>
 ---
 
 # Title
-description
+A brief description of what this is and what it does.
 
 # Goal
 description
