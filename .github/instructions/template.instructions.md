@@ -15,7 +15,7 @@ A brief description of what "good" looks like.
 - list item(s) as markdown links, (ex. `[tech](https://www.tech.org/)`)
 
 ##  Project Structure
-markdown tree diagram
+markdown tree diagram with comments
 
 ## Key files
 - list item(s)
