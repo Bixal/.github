@@ -26,4 +26,6 @@ description
 examples
 
 ## Reference Resources
-- list item(s)
+- list item(s) e.g., README, CONTRIBUTING, ADRs
+- Internal docs
+- External references
