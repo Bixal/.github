@@ -6,7 +6,7 @@ applyTo: <blob-path>
 A brief description of what this is and what it does.
 
 # Goal
-description
+A brief description of what "good" looks like.
 
 ## Essentials
 - list item(s)
