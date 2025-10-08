@@ -18,7 +18,7 @@ A brief description of what "good" looks like.
 markdown tree diagram with comments
 
 ## Key files
-- list item(s)
+- list item(s) and why it matters
 
 ## Development Guidelines
 ### Other Headings
