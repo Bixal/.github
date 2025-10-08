@@ -19,6 +19,7 @@ Implement robust security measures throughout the application lifecycle to prote
 - Validate and sanitize all user inputs
 - Use secure coding practices and regular security testing
 - Maintain up-to-date dependencies and security patches
+- Pin dependencies
 
 
 ## Key Files
