@@ -3,7 +3,7 @@ applyTo: "**/*"
 ---
 
 # Security Implementation Guidelines
-Comprehensive security best practices following OWASP standards for secure application development
+Comprehensive security best practices following OWASP standards for secure application development.
 
 # Goal
 Implement robust security measures throughout the application lifecycle to protect against common vulnerabilities and ensure data integrity, confidentiality, and availability.
