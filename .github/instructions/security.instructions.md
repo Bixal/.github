@@ -2,6 +2,8 @@
 applyTo: "**/*"
 ---
 
+Version: 1.0.0
+
 # Security Implementation Guidelines
 Comprehensive security best practices following OWASP standards for secure application development.
 
