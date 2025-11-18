@@ -12,6 +12,12 @@ Implement robust security measures throughout the application lifecycle to prote
 - When implementing security features, always reference this to the chat during summary or planning phases to ensure alignment with best practices.
 - Do not over-engineer; prioritize practical, effective security measures.
 
+## Fail-Safe & Safe Defaults
+- Default to safe behavior: when in doubt treat data or actions as sensitive and apply the stricter control.
+- Require explicit validation before performing privileged actions; do not assume developer permissions—request confirmation or an approval token.
+- Fail closed on errors: if a security decision cannot be made (unclear input, unavailable policy service), deny the operation and surface a clear remediation path.
+- Provide secure, low-privilege fallbacks where possible (read-only mode, masked outputs, dry-run) to allow safe progress without elevated rights.
+
 ## Essentials
 - Follow OWASP Top 10 security risks mitigation strategies
 - Implement defense-in-depth approach with multiple security layers
@@ -38,12 +44,16 @@ Implement robust security measures throughout the application lifecycle to prote
 - Apply role-based access control (RBAC) with least privilege principle
 - Use secure authentication protocols (OAuth 2.0, SAML, OpenID Connect)
 
+- When invoking scripts or operations that require elevated tokens or secrets, require an explicit approval step (manual confirmation, signed request, or short-lived token issuance).
+
 ### Input Validation & Output Encoding
 - Validate all inputs on both client and server side
 - Use parameterized queries to prevent SQL injection
 - Implement proper output encoding to prevent XSS attacks
 - Sanitize file uploads with type and size restrictions
 - Use Content Security Policy (CSP) headers
+
+- Treat ambiguous inputs as untrusted and require explicit schema or owner confirmation before processing sensitive fields.
 
 ### Data Protection
 - Encrypt sensitive data at rest using industry-standard algorithms (AES-256)
@@ -58,6 +68,8 @@ Implement robust security measures throughout the application lifecycle to prote
 - Avoid logging sensitive data (passwords, tokens, PII)
 - Implement log integrity and tamper detection
 - Set up real-time security monitoring and alerting
+
+- Include fail-safe logging levels and masking: if the sensitivity of data is uncertain, mask by default and provide a secure mechanism to request unmasking with justification and approval.
 
 ### Dependency Management
 - Regularly scan dependencies for known vulnerabilities
