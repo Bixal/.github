@@ -2,6 +2,8 @@
 applyTo: "**/*"
 ---
 
+Version: 1.0.0
+
 # Security Implementation Guidelines
 Comprehensive security best practices following OWASP standards for secure application development.
 
@@ -9,8 +11,9 @@ Comprehensive security best practices following OWASP standards for secure appli
 Implement robust security measures throughout the application lifecycle to protect against common vulnerabilities and ensure data integrity, confidentiality, and availability.
 
 # Critical
-- When implementing security features, always reference this to the chat during summary or planning phases to ensure alignment with best practices.
-- Do not over-engineer; prioritize practical, effective security measures.
+- Always reference during summary or planning phases to ensure alignment with best practices
+- Do not over-engineer; prioritize practical, effective security measures
+- Default to safe behavior, validate privileged actions, and fail closed on uncertainty
 
 ## Essentials
 - Follow OWASP Top 10 security risks mitigation strategies
@@ -20,7 +23,6 @@ Implement robust security measures throughout the application lifecycle to prote
 - Use secure coding practices and regular security testing
 - Maintain up-to-date dependencies and security patches
 - Pin dependencies
-
 
 ## Key Files
 - Security configuration files (authentication, authorization)
@@ -37,6 +39,7 @@ Implement robust security measures throughout the application lifecycle to prote
 - Implement proper session management with secure tokens
 - Apply role-based access control (RBAC) with least privilege principle
 - Use secure authentication protocols (OAuth 2.0, SAML, OpenID Connect)
+- Require an explicit approval when invoking scripts or operations that require tokens or secrets 
 
 ### Input Validation & Output Encoding
 - Validate all inputs on both client and server side
@@ -44,6 +47,7 @@ Implement robust security measures throughout the application lifecycle to prote
 - Implement proper output encoding to prevent XSS attacks
 - Sanitize file uploads with type and size restrictions
 - Use Content Security Policy (CSP) headers
+- Treat ambiguous inputs as untrusted
 
 ### Data Protection
 - Encrypt sensitive data at rest using industry-standard algorithms (AES-256)
@@ -55,9 +59,10 @@ Implement robust security measures throughout the application lifecycle to prote
 ### Error Handling & Logging
 - Implement centralized error handling without exposing sensitive information
 - Log security events (authentication failures, access attempts, data changes)
-- Avoid logging sensitive data (passwords, tokens, PII)
+- Do not log sensitive data (passwords, tokens, PII)
 - Implement log integrity and tamper detection
 - Set up real-time security monitoring and alerting
+- Mask sensitive data by default and provide a secure unmasking mechanisms with approval
 
 ### Dependency Management
 - Regularly scan dependencies for known vulnerabilities
