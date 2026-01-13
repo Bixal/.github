@@ -1,10 +1,10 @@
 ---
 name: Feature request
 about: Suggest an idea for this project
-title: 'Feature request: <short_description>'
+title: "Feature request: <short_description>"
 labels: enhancement
-assignees: ''
-
+assignees: ""
+type: feature
 ---
 
 ## Summary

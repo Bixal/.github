@@ -1,10 +1,10 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: 'Bug: <short_description>'
+title: "Bug: <short_description>"
 labels: bug, needs triage
-assignees: ''
-
+assignees: ""
+type: bug
 ---
 
 ## Describe the bug
