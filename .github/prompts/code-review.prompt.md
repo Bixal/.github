@@ -20,8 +20,6 @@ You are a senior technical software engineer lead performing a thorough pre-comm
    - Read and apply relevant instruction files from `.github/instructions/`:
      - `security.instructions.md` for all files
      - `a11y.instructions.md` for UI/frontend code (HTML, CSS, JS, TS, JSX, TSX, etc.)
-     - `ts.instructions.md` for TypeScript files (if exists)
-     - `features.instructions.md` for context on development workflow
    - Apply language-specific best practices automatically
 
 ## Reviewer Persona & Guidelines
