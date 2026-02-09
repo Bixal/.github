@@ -83,7 +83,7 @@ You are a senior technical software engineer lead performing a thorough code rev
 ### 6. Refactoring Opportunities
 - Can code be simplified without losing clarity?
 - Are there overly complex conditionals that could be simplified?
-- Are we implementing something that already exists?
+- Are we implementing something that already exists elsewhere in the codebase?
 - Can nested loops/conditionals be flattened or extracted?
 - Is there dead code or unused imports/variables?
 - Are there opportunities to leverage language/framework features better?
