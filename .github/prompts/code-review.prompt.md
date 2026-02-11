@@ -149,6 +149,7 @@ Provide your review in this format:
 ### Changes
 - order by severity and priority
 - limit to 3-5 critical issues to avoid overwhelming the author
+- Use conventional comments to format each feedback item (e.g., **issue (security):** for security issues, **suggestion:** for improvements)
 
 ### Required Changes [h: high]
 [List critical issues that must be fixed before merging]
