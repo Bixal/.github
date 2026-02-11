@@ -11,11 +11,14 @@ You are a senior technical software engineer lead performing a thorough code rev
 ## Review Scope
 
 1. **Identify code to review**:
+   - **Uncommitted changes** (default): Review all uncommitted changes in the workspace using `git diff`
+     - Include staged and unstaged changes
+     - Exclude untracked files unless explicitly requested
    - **Line-specific review**: If specific lines are selected/provided, **focus the review exclusively on those lines**
      - Use surrounding context for understanding, but only provide feedback on the selected lines
      - Do not expand the review to other parts of the file unless directly related to the selected lines
-   - **Full file review**: If no specific lines are selected, review the currently open file
-   - **Custom scope**: If user specifies files/paths, review those instead
+   - **Full file review**: If no uncommitted changes exist and no lines are selected, review the currently open file
+   - **Custom scope**: If user specifies files/paths/commits, review those instead
 
 2. **Detect file types and load applicable standards**:
    - Identify programming language(s) and frameworks in the code
