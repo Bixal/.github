@@ -1,0 +1,18 @@
+{
+  "name": "alert-button-test",
+  "version": "1.0.0",
+  "description": "Alert button component with accessibility and security features",
+  "main": "alertButton.js",
+  "scripts": {
+    "test": "jest utils.test.js --testEnvironment=node",
+    "test:watch": "jest --watch --testEnvironment=node"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": ["**/*.test.js"],
+    "setupFilesAfterEnv": ["<rootDir>/test-setup.js"]
+  }
+}
