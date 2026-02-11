@@ -1,6 +1,5 @@
 ---
 agent: agent
-model: Claude Sonnet 4.5 (copilot)
 description: 'Perform comprehensive code review as a senior technical lead, evaluating correctness, quality, maintainability, and adherence to standards with actionable feedback'
 ---
 
