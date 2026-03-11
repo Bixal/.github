@@ -43,68 +43,18 @@ You are a senior technical software engineer lead performing a thorough code rev
 
 ## Comprehensive Review Checklist
 
-**Important**: When reviewing specific lines only, apply these checks exclusively to the selected lines. Use surrounding code for context, but do not provide feedback on unselected portions of the file.
+**Important**: Apply all of the following to every review:
 
-### 1. Necessity & Purpose
-- **Is this code required?** Does it solve a real problem or is it speculative/premature?
-- Does this change align with project goals and priorities?
-- Could the desired outcome be achieved with less code or by leveraging existing functionality?
-
-### 2. Correctness & Functionality
-- Does the code accomplish its intended purpose?
-- Are there any logical errors or edge cases not handled?
-- Are error conditions properly handled?
-- Does the code match any requirements or specifications?
-
-### 3. Code Quality & Maintainability
-- **System design**: How well do the various pieces interact together? Is the integration with the overall system well-designed?
-- **Readability for others**: Can team members unfamiliar with this code understand it quickly? Is it written for humans first?
-- **Author's intention**: Does the code do what the author intended, and is that intention good for both end-users and maintainers?
-- **Complexity**: Is this no more complex than needed? Can it be understood quickly? Are developers likely to introduce bugs when modifying it?
-- **Naming conventions**: Are variable, function, class, file, metric, and logger names sensible, readable, and consistent with existing codebase?
-- **Code clarity**: Is the code self-documenting? Is complex logic explained?
-- **Single Responsibility**: Do functions/classes have clear, focused purposes?
-- **DRY principle**: Is there unnecessary code duplication?
-- **Magic values**: Are there hardcoded values that should be constants/configs?
-
-### 4. Documentation & Type Safety
-- **Function documentation**: Are function docs complete and accurate?
-- **Type hints/annotations**: Are types properly defined and comprehensive?
-- **Comments**: Are they necessary, accurate, and add value?
-- **Outdated docs**: Have docs been updated to match code changes?
-
-### 5. Efficiency & Performance
-- Are there more efficient approaches to achieve the same result?
-- Are there unnecessary computations or redundant operations?
-- Are data structures and algorithms appropriate for the use case?
-- Are there potential memory leaks or resource management issues?
-
-### 6. Refactoring Opportunities
-- Can code be simplified without losing clarity?
-- Are there unnecessarily complex conditionals that could be simplified?
-- Are we implementing something that already exists elsewhere in the codebase?
-- Can nested loops/conditionals be flattened or extracted?
-- Is there dead code or unused imports/variables?
-- Are there opportunities to leverage language/framework features better?
-
-### 7. Testing & Coverage
-- Are there gaps in unit test scenarios for this code?
-- Are edge cases and error conditions tested?
-- Are tests readable and maintainable?
-- Is test coverage adequate for the risk level?
-- Are integration points properly tested?
-
-### 8. Security Review
-- Apply all checks from `security.instructions.md`:
-
-### 9. Accessibility Review (UI/Frontend Code)
-- Apply all checks from `a11y.instructions.md`:
-
-### 10. Logging & Observability
-- Are log statements accurate in describing the logic state?
-- Is the log level appropriate (debug, info, warn, error)?
-- Are sensitive data (passwords, tokens, PII) excluded from logs?
-- Are important state changes and errors logged?
+1. **Necessity** — Is this code required? Could the outcome be achieved with less code or existing functionality?
+2. **Correctness** — Does it do what it's supposed to? Are edge cases and error conditions handled?
+3. **Code quality** — Is it readable, appropriately complex, and maintainable? Good naming? Single responsibility? DRY? No magic values?
+4. **Docs & types** — Are functions documented, types annotated, and comments accurate and necessary?
+5. **Performance** — Any unnecessary computation, inefficient data structures, or memory/resource issues?
+6. **Refactoring** — Dead code, unused imports, duplicated logic, or opportunities to use language/framework features better?
+7. **Testing** — Are edge cases, error conditions, and integration points tested? Is coverage appropriate for the risk level?
+8. **Security** — Apply all checks from `security.instructions.md`. If not found, apply OWASP Top 10 as a baseline.
+9. **Accessibility** — Apply all checks from `a11y.instructions.md`. If not found, apply WCAG 2.1 AA as a baseline.
+10. **Logging** — Are log levels appropriate? Are state changes and errors logged? Is sensitive data (passwords, tokens, PII) excluded?
 
 ### Questions for Author
 
