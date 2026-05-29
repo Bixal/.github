@@ -16,6 +16,28 @@ Closes #ISSUE_NO
 - [ ] Documentation update
 - [ ] Other (please explain):
 
+<!-- 
+## Dependency updates
+
+| Dependency name                            | Previous version | New version |
+| :----------------------------------------- | ---------------: | ----------: |
+| [Updated dependency example]               |          [1.0.0] |     [1.0.1] |
+| [New dependency example] **(New)**         |               -  |     [3.0.1] |
+| [Removed dependency example] **(Removed)** |         [2.10.2] |          -  |
+
+### Audit
+
+**Before**
+```bash
+2 moderate severity vulnerabilities
+```
+
+**After**
+```bash
+0 severity vulnerabilities
+```
+-->
+
 ## How did you test?
 
 Explain how you made sure your changes work.
