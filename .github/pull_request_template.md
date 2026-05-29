@@ -21,9 +21,9 @@ Closes #ISSUE_NO
 
 | Dependency name                            | Previous version | New version |
 | :----------------------------------------- | ---------------: | ----------: |
-| [Updated dependency example]               |          [1.0.0] |     [1.0.1] |
-| [New dependency example] **(New)**         |               -  |     [3.0.1] |
-| [Removed dependency example] **(Removed)** |         [2.10.2] |          -  |
+| [UPDATED_DEPENDENCY_EXAMPLE]               |          [1.0.0] |     [1.0.1] |
+| [NEW_DEPENDENCY_EXAMPLE] **(New)**         |               -  |     [3.0.1] |
+| [REMOVED_DEPENDENCY_EXAMPLE] **(Removed)** |         [2.10.2] |          -  |
 
 ### Audit
 
